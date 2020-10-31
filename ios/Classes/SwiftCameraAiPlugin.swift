@@ -12,3 +12,4 @@ public class SwiftCameraAiPlugin: NSObject, FlutterPlugin {
     result("iOS " + UIDevice.current.systemVersion)
   }
 }
+

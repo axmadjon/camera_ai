@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'camera_ai'
-  s.version          = '0.0.1'
+  s.version          = '0.0.3'
   s.summary          = 'Camera AI'
   s.description      = <<-DESC
 Camera AI
@@ -15,7 +15,13 @@ Camera AI
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.platform = :ios, '8.0'
+  s.dependency 'GoogleMLKit/FaceDetection'
+  s.dependency 'Firebase/Core'
+  s.static_framework = true
+  s.platform = :ios, '11.0'
+  s.vendored_frameworks = 'opencv2.framework'
+  s.vendored_frameworks = 'ncnn.framework'
+  s.vendored_frameworks = 'openmp.framework'
 
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }

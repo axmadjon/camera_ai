@@ -7,6 +7,12 @@
 //
 
 
+// Put OpenCV include files at the top. Otherwise an error happens.
+#import <opencv2/core/mat.hpp>
+#import <opencv2/imgproc.hpp>
+
+using namespace cv;
+
 #include <string>
 #include <vector>
 #include <time.h>
@@ -14,15 +20,12 @@
 #include <map>
 #include <iostream>
 
-// Put OpenCV include files at the top. Otherwise an error happens.
-#import <opencv2/opencv.hpp>
-#import <opencv2/imgproc.hpp>
+using namespace std;
 
 #import "OpenCvWrapper.h"
 #import "ncnn/ncnn/net.h"
 
-using namespace std;
-using namespace cv;
+
 
 //////////////////// MTCNN PART BEG ////////////////////
 

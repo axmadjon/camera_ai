@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface OpenCvWrapper: NSObject
-
 +(nonnull NSMutableArray* )detectFace: (nonnull UIImage *)rawImage;
-
 @end
+
+NS_ASSUME_NONNULL_END

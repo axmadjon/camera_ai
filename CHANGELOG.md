@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.5
+
+- fix opencv macro NO conflict
+
+## 0.0.4
+
+- add ios support
+
 ## 0.0.3
 
 - change readme.md

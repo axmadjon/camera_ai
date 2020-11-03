@@ -3,7 +3,7 @@ description: >
   Camera AI improved the Datalab LLC camera plug-in to
   use a commercial program to make it easier to connect
   face and barcode recognition
-version: 0.0.3
+version: 0.0.5
 repository: https://github.com/axmadjon/camera_ai
 homepage: https://github.com/axmadjon/camera_ai
 
